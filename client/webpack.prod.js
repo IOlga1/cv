@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -16,16 +18,35 @@ module.exports = {
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['@babel/preset-react'],
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
                     },
                 },
+            },
+            {
+                test: /\.scss$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            modules: true,
+                        },
+                    },
+                    'sass-loader',
+                ],
             },
         ],
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
-            inject: 'body',
         }),
+        new MiniCssExtractPlugin({
+            filename: 'styles.css',
+        }),
+        new CleanWebpackPlugin(),
     ],
+    resolve: {
+        extensions: ['.js', '.jsx'],
+    },
 };
