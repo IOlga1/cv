@@ -1,8 +1,8 @@
 import React from 'react';
-// import classes from './App.css';
+import classes from './App.scss';
 
 export default function App() {
     const a = 2;
 
-    return <div>HELLO</div>;
+    return <div className={classes.check}>HELLO</div>;
 }
