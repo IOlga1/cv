@@ -1,7 +1,12 @@
+import { Provider } from 'react-redux';
 import classes from './App.scss';
+import { store } from '../../redux/store';
+
 
 export default function App() {
-  const a: any = 2;
-  console.log(a == 2);
-  return <div className={classes.check}>HELLO</div>;
+  return (
+    <Provider store={store}>
+      <div className={classes.check}>HELLO</div>
+    </Provider>
+  );
 }
