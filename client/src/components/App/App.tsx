@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <div className={classes.check}>HELLO</div>
-      <De/>
+      <De />
     </Provider>
   );
 }

@@ -4,7 +4,7 @@ import theme from './reducers/themeSlice';
 export type RootState = ReturnType<typeof rootReducer>;
 
 export const rootReducer = combineReducers({
-  theme,
+  theme
 });
 
 export const store = configureStore({

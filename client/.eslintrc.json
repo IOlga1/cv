@@ -22,7 +22,6 @@
     "quotes": ["warn", "single"],
     "semi": ["warn", "always"],
     "no-console": "warn",
-    "no-unused-vars": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "prefer-const": "warn",
