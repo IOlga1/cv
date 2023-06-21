@@ -1,13 +1,15 @@
-import De from '../De/De';
 import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router-dom';
 import { store } from '../../redux';
-import classes from './App.scss';
+import AppRouter from '../AppRouter/AppRouter';
+import './App.scss';
 
 export default function App() {
   return (
     <Provider store={store}>
-      <div className={classes.check}>HELLO</div>
-      <De />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </Provider>
   );
 }

@@ -3,5 +3,3 @@ export enum ThemeOptions {
   black = 'black',
   red = 'red'
 }
-
-const _at = 2;

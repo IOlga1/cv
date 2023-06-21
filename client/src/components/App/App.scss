@@ -1,3 +1,68 @@
-.check {
-    background-color: green;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import "../../variables.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 0;
+    margin: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+
+    ::-webkit-scrollbar {
+        background-color: rgba(255, 255, 255, 0.148);
+        width: 7px;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.577);
+        box-shadow: gray;
+        border-radius: 5px;
+    }
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input,
+textarea {
+    outline: none;
+    border: none;
+    vertical-align: middle;
+
+      &::placeholder {
+        color: $primary;
+      }
 }
