@@ -24,7 +24,6 @@ figcaption,
 blockquote,
 dl,
 dd {
-    margin: 0;
     user-select: none;
 }
 
@@ -49,7 +48,6 @@ body {
 ul[class],
 ol[class] {
     list-style: none;
-    padding: 0;
 }
 
 a {

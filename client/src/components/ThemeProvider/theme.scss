@@ -1,0 +1,71 @@
+[data-theme="white"] {
+  // background-color: yellow;
+  color: pink;
+
+  // & .app_background_img {
+  //     background-image: url('../../assets/img/wallpapper_nature_light.jpg');
+  // }
+
+  // & .input_search {
+  //     background-color: $light_theme_input_background;
+  // }
+
+  // & .primary_container {
+  //     background-color: rgba(255, 255, 255, 0.3);
+  // }
+
+  // & .secondary_container {
+  //     background-color: rgba(0, 0, 0, 0.268);
+  // }
+
+  // & .tertiary_container {
+  //     background-color: rgba(255, 255, 255, 0.3);
+  // }
+
+  // & .forecast_area p {
+  //     color: $secondary_link_color;
+  // }
+
+  // & .primary_button {
+  //     background-color: $grey_bg_medium_opacity;
+  //     border-color: $primary_border_color;
+  // }
+}
+
+[data-theme="black"] {
+  // background-color: $secondary_bg_color;
+  color: rgb(0, 0, 0);
+
+  // & .app_background_img {
+  //     background-image: url('../../assets/img/wallpapper_nature_dark.jpg');
+  // }
+
+  // & .input_search {
+  //     background-color: $dark_theme_input_background;
+  // }
+
+  // & .primary_container {
+  //     background-color: rgba(5, 20, 43, 0.5);
+  // }
+
+  // & .secondary_container {
+  //     background-color: rgba(5, 20, 43, 0.45);
+  // }
+
+  // & .tertiary_container {
+  //     background-color: rgba(5, 20, 43, 0.5);
+  // }
+
+  // & .forecast_area p {
+  //     color: $primary_text_color;
+  // }
+
+  // & .primary_button {
+  //     background-color: $dark_theme_input_background;
+  //     border-color: rgba(0, 0, 0, 0);
+  // }
+}
+
+[data-theme="red"] {
+  color: rgb(255, 0, 0);
+}
