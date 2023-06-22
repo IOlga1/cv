@@ -3,6 +3,7 @@ import classes from './ThemeProvider.scss';
 import './theme.scss';
 import { useDispatch } from 'react-redux';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
+import { ThemeOptions } from '../../constants/theme';
 // import { setTheme } from '../../redux/reducers/themeReducer';
 
 export default function ThemeProvider({ children }: { children: ReactNode }) {
@@ -15,10 +16,11 @@ export default function ThemeProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     localStorage.setItem('theme', theme);
-  }, [theme]);
+  }, []);
 
   return (
     <div data-theme={theme}>
+      <button onClick={() => console.log('AAA')}>xoxoxooxo</button>
       <div className={classes.wrapper}>{children}</div>
     </div>
   );
